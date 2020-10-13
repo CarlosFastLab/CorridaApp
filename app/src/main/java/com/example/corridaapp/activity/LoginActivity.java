@@ -5,9 +5,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.corridaapp.R;
 import com.example.corridaapp.fragment.LoginFragment;
+import com.example.corridaapp.models.UsuariosLista;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -24,6 +26,5 @@ public class LoginActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.frameLogin, loginFragment);
         transaction.commit();
-
     }
 }
